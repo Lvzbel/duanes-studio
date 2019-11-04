@@ -20,22 +20,19 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item <?php if(is_page('home')) echo 'active' ?>">
           <a class="nav-link" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('gallery')) echo 'active' ?>">
           <a class="nav-link" href="#">Gallery</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('blog')) echo 'active' ?>">
           <a class="nav-link" href="#">Blog</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('about')) echo 'active' ?>">
           <a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('contact')) echo 'active' ?>">
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
