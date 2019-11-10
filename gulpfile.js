@@ -8,10 +8,21 @@ const replace = require("gulp-replace");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const uglify = require("gulp-uglify");
+
 // File path variable
-
+const files = {
+  sassPath: "src/scss/**/*.scss",
+  jsPath: "src/js/**/*.js"
+};
 // Sass task
-
+function stylesTask() {
+  return src(files.sassPath)
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("dist"));
+}
 // JS task
 
 // Cachebusting task
