@@ -24,7 +24,12 @@ function stylesTask() {
     .pipe(dest("dist"));
 }
 // JS task
-
+function jsTask() {
+  return src(files.jsPath)
+    .pipe(concat("all.js"))
+    .pipe(uglify())
+    .pipe(dest("dist"));
+}
 // Cachebusting task
 
 // Watch task
