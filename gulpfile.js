@@ -11,7 +11,7 @@ const uglify = require("gulp-uglify");
 
 // File path variable
 const files = {
-  sassPath: "src/scss/**/*.scss",
+  sassPath: "src/sass/**/*.scss",
   jsPath: "src/js/**/*.js"
 };
 // Sass task
@@ -30,8 +30,9 @@ function jsTask() {
     .pipe(uglify())
     .pipe(dest("dist"));
 }
-// Cachebusting task
-
 // Watch task
-
+function watchTask() {
+  watch([files.sassPath, files.jsPath], parallel(stylesTask, jsTask));
+}
 // Default task
+exports.default = series(parallel(stylesTask, jsTask), watchTask);
