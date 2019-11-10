@@ -11,7 +11,7 @@ const uglify = require("gulp-uglify");
 
 // File path variable
 const files = {
-  sassPath: "src/sass/**/*.scss",
+  sassPath: "src/sass/styles.scss",
   jsPath: "src/js/**/*.js"
 };
 // Sass task
