@@ -11,12 +11,13 @@ const uglify = require("gulp-uglify");
 
 // File path variable
 const files = {
-  sassPath: "src/sass/styles.scss",
+  sassPath: "src/sass/**/*.scss",
+  sassMasterPath: "src/sass/styles.scss",
   jsPath: "src/js/**/*.js"
 };
 // Sass task
 function stylesTask() {
-  return src(files.sassPath)
+  return src(files.sassMasterPath)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
