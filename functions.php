@@ -20,7 +20,7 @@ add_action('wp_enqueue_scripts', 'load_jquery');
 
 // Load custom packages
 function load_styles() {
-  wp_register_style( 'styles', get_template_directory_uri() . '/dist/styles.css', array(), null, 'styles' );
+  wp_register_style( 'styles', get_template_directory_uri() . '/dist/styles.css', false);
   wp_enqueue_style('styles');
 }
 add_action('wp_enqueue_scripts', 'load_styles');
