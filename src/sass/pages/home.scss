@@ -2,7 +2,6 @@
 
 .header {
   height: 100vh;
-  width: 100vw;
   background-image: url("./images/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -24,4 +23,25 @@
 
 .services {
   margin: 5rem 0;
+
+  &__header {
+    text-align: center;
+    color: $color-primary;
+    margin-bottom: 3rem;
+    text-shadow: $shadow-light;
+  }
+
+  &__service {
+    margin-top: 2rem;
+  }
+
+  &__img {
+    box-shadow: $shadow-dark;
+    margin-bottom: 1.5rem;
+  }
 }
+
+// .btn-primary {
+//   border-color: $color-primary;
+//   background-color: $color-primary;
+// }
