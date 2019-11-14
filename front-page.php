@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <header class="header">
   <div class="header__container text-white header__background">
-    <h3 class="display-5">Photography and Video Production by</h3>
-    <h1 class="display-2">Duane lastname</h1>
-    <p class="lead">Making idea projects a reality</p>
-    <a href="<?php echo site_url('/gallery'); ?>" class="btn btn-lg btn-primary">Portfolio</a>
+    <h3 class="display-5 header__by">Photography and Video Production by</h3>
+    <h1 class="display-2 header__main">Duane last</h1>
+    <p class="lead header__lead">Making your idea projects a reality</p>
+    <a href="<?php echo site_url('/gallery'); ?>" class="btn btn-lg btn-primary px-5 header__btn">Portfolio</a>
   </div>
 
 </header>
