@@ -1,5 +1,4 @@
 <?php
-
 // Load vendor packages
 function load_bootstrap()
 {
