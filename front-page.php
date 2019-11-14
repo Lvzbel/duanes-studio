@@ -11,30 +11,32 @@
 
 <section class="services">
   <div class="container">
+    <h2 class="display-4 services__header">Services We Specialize</h2>
     <div class="row services__container">
-      <div class="col-md-3">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="img-fluid">
+
+      <div class="col-md-3 services__service">
+        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
         <h3>Sports</h3>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
           sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
           asperiores.</p>
       </div>
-      <div class="col-md-3">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="img-fluid">
+      <div class="col-md-3 services__service">
+        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
         <h3>Automotive</h3>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
           sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
           asperiores.</p>
       </div>
-      <div class="col-md-3">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="img-fluid">
+      <div class="col-md-3 services__service">
+        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
         <h3>Video Production</h3>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
           sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
           asperiores.</p>
       </div>
-      <div class="col-md-3">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="img-fluid">
+      <div class="col-md-3 services__service">
+        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
         <h3>Video Production</h3>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
           sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
