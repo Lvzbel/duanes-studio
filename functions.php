@@ -1,13 +1,5 @@
 <?php
 // Load vendor packages
-function load_bootstrap()
-{
-  // Load Bootstrap
-  wp_register_style( 'bootstrap', get_template_directory_uri() . '/vendor/css/bootstrap.min.css', array(), false, 'all' );
-  wp_enqueue_style( 'bootstrap');
-}
-add_action('wp_enqueue_scripts', 'load_bootstrap');
-
 function load_jquery()
 {
   wp_enqueue_script( 'jquery');
