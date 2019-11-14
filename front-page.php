@@ -45,8 +45,24 @@
     </div>
   </div>
 </section>
-<div class="container">
-  <?php get_template_part('includes/section', 'content'); ?>
-</div>
+<section class="about">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about__images-container">
+          <img src="/wp-content/themes/duanes-theme/dist/images/about.jpg" alt="" class="img-fluid about__img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about__description">
+          <?php get_template_part('includes/section', 'content'); ?>
+        </div>
+      </div>
+    </div>
+    <div class="about__btn-container">
+      <a class="about__btn btn btn-secondary btn-lg">Read More...</a>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>

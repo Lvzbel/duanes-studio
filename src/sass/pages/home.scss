@@ -34,8 +34,9 @@
   }
 
   &__btn {
-    margin-top: 2rem;
-    border-radius: 20px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    // border-radius: 20px;
   }
 }
 
@@ -56,5 +57,34 @@
   &__img {
     box-shadow: $shadow-dark;
     margin-bottom: 1.5rem;
+  }
+}
+
+.about {
+  background-color: $color-primary;
+  padding: 5rem 0;
+
+  &__images-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3rem;
+  }
+
+  &__img {
+    max-height: 30rem;
+    box-shadow: $shadow-dark;
+    border-radius: 2px;
+  }
+
+  &__btn-container {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    cursor: pointer;
   }
 }
