@@ -1,7 +1,8 @@
 @import "../abstracs/variables";
 // Custom colors
 $theme-colors: (
-  "primary": $color-primary
+  "primary": $color-primary,
+  "secondary": $color-secondary
 );
 
 @import "../../../vendor/scss/bootstrap.scss";
