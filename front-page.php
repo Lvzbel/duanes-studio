@@ -55,6 +55,7 @@
 </section>
 <section class="about">
   <div class="container text-white">
+    <h2 class="about__header display-4">Recent Blog Posts</h2>
     <div class="row">
       <div class="col-md-6">
         <div class="about__images-container">
@@ -71,6 +72,51 @@
       <a class="about__btn btn btn-secondary btn-lg">Read More...</a>
     </div>
   </div>
+</section>
+
+<!-- Blog Post Preview -->
+<section class="blog-preview">
+  <div class="container">
+    <h2 class="blog-preview__header display-4">Recent Blog Posts</h2>
+
+    <div class="row justify-content-md-center blog-preview__row">
+      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <div class="col-md-7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
+          harum quae fugiat,
+          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
+        <div class="blog-preview__btn-container">
+          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center blog-preview__row">
+      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <div class="col-md-7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
+          harum quae fugiat,
+          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
+        <div class="blog-preview__btn-container">
+          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center blog-preview__row">
+      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <div class="col-md-7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
+          harum quae fugiat,
+          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
+        <div class="blog-preview__btn-container">
+          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 <?php get_footer(); ?>

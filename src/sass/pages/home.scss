@@ -64,6 +64,11 @@
   background-color: $color-primary;
   padding: 5rem 0;
 
+  &__header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
   &__images-container {
     display: flex;
     justify-content: center;
@@ -86,5 +91,27 @@
 
   &__btn {
     cursor: pointer;
+  }
+}
+
+.blog-preview {
+  margin: 5rem 0;
+
+  &__header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__row {
+    margin-bottom: 2rem;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    text-align: end;
   }
 }
