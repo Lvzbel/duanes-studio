@@ -14,34 +14,42 @@
     <h2 class="display-4 services__header">Services We Specialize</h2>
     <div class="row services__container">
 
-      <div class="col-md-3 services__service">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
-        <h3>Sports</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
-          sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
-          asperiores.</p>
+      <div class="col-md-4 services__service">
+        <div class="card">
+          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <div class="card-body">
+            <h2 class="card-title text-secondary">Sports</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 services__service">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
-        <h3>Automotive</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
-          sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
-          asperiores.</p>
+
+      <div class="col-md-4 services__service">
+        <div class="card">
+          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <div class="card-body">
+            <h2 class="card-title text-secondary">Automotive</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 services__service">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
-        <h3>Video Production</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
-          sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
-          asperiores.</p>
+
+      <div class="col-md-4 services__service">
+        <div class="card">
+          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <div class="card-body">
+            <h2 class="card-title text-secondary">Video Production</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 services__service">
-        <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" alt="" class="services__img img-fluid">
-        <h3>Video Production</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis adipisci, est consectetur
-          sint laboriosam qui iusto tempore suscipit alias, nam minima esse sed minus itaque corporis voluptas. Fugiat,
-          asperiores.</p>
-      </div>
+
     </div>
   </div>
 </section>
