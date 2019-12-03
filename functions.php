@@ -22,3 +22,9 @@ function load_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+// Adding feature image
+function mytheme_post_thumbnails() {
+  add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );
