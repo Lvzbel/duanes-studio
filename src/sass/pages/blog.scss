@@ -1,0 +1,9 @@
+.blog {
+  &__banner {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
