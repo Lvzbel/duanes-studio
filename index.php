@@ -12,7 +12,7 @@
   <?php 
     while(have_posts()) {
       the_post(); ?>
-  <h2 class="h1 text-primary"><?php the_title(); ?></h2>
+  <h2 class="blog__single-header h1 text-primary"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
   <div class="blog__metabox">
     <p class="blog__metabox-text"> Posted by <?php the_author_posts_link(); ?> on <?php the_time("n.j.y"); ?> in
       <?php echo get_the_category_list(', ') ?></p>
@@ -20,11 +20,9 @@
   <div class=" row justify-content-md-center blog-preview__row">
     <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-4">
     <div class="col-md-8">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
-        harum quae fugiat,
-        earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
+      <p><?php the_excerpt(); ?></p>
       <div class="blog-preview__btn-container">
-        <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
+        <a href="<?php the_permalink(); ?>" class="btn btn-primary blog-preview__btn">Read more...</a>
       </div>
     </div>
   </div>
