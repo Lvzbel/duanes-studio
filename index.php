@@ -18,7 +18,15 @@
       <?php echo get_the_category_list(', ') ?></p>
   </div>
   <div class=" row justify-content-md-center blog-preview__row">
-    <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-4">
+    <div class="blog__thumbnail col-md-4">
+      <a href="<?php the_permalink(); ?>">
+        <?php 
+        if( has_post_thumbnail() ):
+            echo get_the_post_thumbnail($id, 'medium');
+        endif; 
+        ?>
+      </a>
+    </div>
     <div class="col-md-8">
       <p><?php the_excerpt(); ?></p>
       <div class="blog-preview__btn-container">

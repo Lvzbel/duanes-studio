@@ -33,5 +33,9 @@
     &-text {
       margin: 0;
     }
+
+    &__thumbnail > img {
+      border-radius: 10%;
+    }
   }
 }
