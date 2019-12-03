@@ -22,7 +22,7 @@
       <a href="<?php the_permalink(); ?>">
         <?php 
         if( has_post_thumbnail() ):
-            echo get_the_post_thumbnail($id, 'medium');
+            echo get_the_post_thumbnail($id);
         endif; 
         ?>
       </a>

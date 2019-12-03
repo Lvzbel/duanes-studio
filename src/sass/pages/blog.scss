@@ -33,9 +33,17 @@
     &-text {
       margin: 0;
     }
+  }
 
-    &__thumbnail > img {
-      border-radius: 10%;
-    }
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__thumbnail img {
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }
