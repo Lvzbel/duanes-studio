@@ -12,7 +12,14 @@
 </div>
 
 <div class="blog__container container">
-  metabox will go here
+  <div class="breadcrum">
+    <a href="<?php echo site_url("/blog"); ?>" class="breadcrum__home"><i class="fa fa-home" aria-hidden="true"></i>
+      Blog Home</a>
+    <div class="breadcrum__metabox">
+      <p class="breadcrum__metabox-text"> Posted by <?php the_author_posts_link(); ?> on <?php the_time("n.j.y"); ?> in
+        <?php echo get_the_category_list(', ') ?></p>
+    </div>
+  </div>
 
   <div class="blog__generic-content">
     <?php the_content(); ?>

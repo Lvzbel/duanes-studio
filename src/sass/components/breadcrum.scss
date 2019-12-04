@@ -1,0 +1,30 @@
+@import "../abstracs/variables";
+
+.breadcrum {
+  display: flex;
+  &__home {
+    display: inline-block;
+    background-color: $color-primary;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__metabox {
+    display: inline-block;
+    border: 1px solid $color-secondary;
+    background-color: lighten($color-secondary, 30%);
+    color: darken($color-secondary, 10%);
+    padding: 0.5rem;
+    font-weight: 500;
+
+    &-text {
+      margin: 0;
+    }
+  }
+}
