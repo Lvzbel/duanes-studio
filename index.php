@@ -36,6 +36,11 @@
   </div>
   <?php }
   ?>
+  <div class="blog__pagination">
+    <div class="blog__pages">
+      <?php echo paginate_links(); ?>
+    </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>
