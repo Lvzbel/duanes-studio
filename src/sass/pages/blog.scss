@@ -1,6 +1,9 @@
 @import "../abstracs/variables";
 
 .blog {
+  &__body {
+    padding: 5rem 0;
+  }
   &__container {
     position: relative;
   }
