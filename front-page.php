@@ -16,7 +16,7 @@
 
       <div class="col-md-4 services__service">
         <div class="card">
-          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
             <h2 class="card-title text-secondary">Sports</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -28,7 +28,7 @@
 
       <div class="col-md-4 services__service">
         <div class="card">
-          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
             <h2 class="card-title text-secondary">Automotive</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -40,7 +40,7 @@
 
       <div class="col-md-4 services__service">
         <div class="card">
-          <img src="/wp-content/themes/duanes-theme/dist/images/sports.jpg" class="card-img-top" alt="Swimmer">
+          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
             <h2 class="card-title text-secondary">Video Production</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
