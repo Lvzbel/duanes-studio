@@ -80,7 +80,7 @@
     <h2 class="blog-preview__header display-4">Recent Blog Posts</h2>
 
     <div class="row justify-content-md-center blog-preview__row">
-      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
       <div class="col-md-7">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
           harum quae fugiat,
@@ -92,7 +92,7 @@
     </div>
 
     <div class="row justify-content-md-center blog-preview__row">
-      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
       <div class="col-md-7">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
           harum quae fugiat,
@@ -104,7 +104,7 @@
     </div>
 
     <div class="row justify-content-md-center blog-preview__row">
-      <img src="/wp-content/themes/duanes-theme/dist/images/auto.jpg" alt="" class="img-thumbnail col-md-3">
+      <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
       <div class="col-md-7">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
           harum quae fugiat,
