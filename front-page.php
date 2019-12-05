@@ -59,8 +59,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="about__images-container">
-          <img src="<?php echo get_theme_file_uri('/src/images/about.jpg'); ?>"
-            src="/wp-content/themes/duanes-theme/dist/images/about.jpg" alt="" class="img-fluid about__img">
+          <img src="<?php echo get_theme_file_uri('/src/images/about.jpg'); ?>" alt="" class="img-fluid about__img">
         </div>
       </div>
       <div class="col-md-6">
