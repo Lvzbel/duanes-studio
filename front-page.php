@@ -55,11 +55,12 @@
 </section>
 <section class="about">
   <div class="container text-white">
-    <h2 class="about__header display-4">Recent Blog Posts</h2>
+    <h2 class="about__header display-4">About me</h2>
     <div class="row">
       <div class="col-md-6">
         <div class="about__images-container">
-          <img src="/wp-content/themes/duanes-theme/dist/images/about.jpg" alt="" class="img-fluid about__img">
+          <img src="<?php echo get_theme_file_uri('/src/images/about.jpg'); ?>"
+            src="/wp-content/themes/duanes-theme/dist/images/about.jpg" alt="" class="img-fluid about__img">
         </div>
       </div>
       <div class="col-md-6">
