@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="About container">
   <?php get_template_part('includes/section', 'content'); ?>
 </div>
 
