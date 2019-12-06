@@ -10,6 +10,12 @@
 
   &__generic-content {
     padding: 5rem 0;
+
+    // Center images from wordpress
+    & p img {
+      display: block;
+      margin: auto;
+    }
   }
 
   &__single-header {
