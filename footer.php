@@ -7,8 +7,12 @@
         <p>Email: email@email.com</p>
       </div>
       <div class="col-md-6">
-        <p>Social media goes here</p>
-        <p>Each social media will have an icon</p>
+        <p>Check out my Social Media!</p>
+        <ul class="Social">
+          <li><a href="#" class="Social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="Social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="Social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
     </div>
   </div>
