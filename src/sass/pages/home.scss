@@ -77,7 +77,8 @@
   }
 
   &__img {
-    max-height: 40rem;
+    // max-height: 40rem;
+    width: 100%;
     box-shadow: $shadow-dark;
     border-radius: 2px;
   }
