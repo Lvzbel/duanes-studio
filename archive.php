@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div class="blog__banner jumbotron"
+<div class="Banner jumbotron"
   style="background-image: url(<?php echo get_theme_file_uri('/src/images/banner-blog.jpg'); ?>);">
   <div class="container">
-    <h1 class="blog__header display-4 font-weight-normal text-light"><?php if (is_category()) {
+    <h1 class="Banner__header display-4 font-weight-normal text-light"><?php if (is_category()) {
       single_cat_title();
     } 
     if (is_author()) {

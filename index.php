@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div class="blog__banner jumbotron"
+<div class="Banner jumbotron"
   style="background-image: url(<?php echo get_theme_file_uri('/src/images/banner-blog.jpg'); ?>);">
   <div class="container">
-    <h1 class="blog__header display-4 font-weight-normal text-light">Blog</h1>
+    <h1 class="Banner__header display-4 font-weight-normal text-light">Blog</h1>
     <p class="lead text-light">Stay up to the day about my past projects and other announcements</p>
   </div>
 </div>

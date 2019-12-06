@@ -1,0 +1,13 @@
+.Banner {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+
+  &__header {
+    margin-top: 56px;
+    margin-bottom: 15px;
+  }
+}
