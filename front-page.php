@@ -79,42 +79,27 @@
   <div class="container">
     <h2 class="blog-preview__header display-4">Recent Blog Posts</h2>
 
+    <?php 
+      $homepagePosts = new WP_Query(array(
+        'posts_per_page' => 3
+      ));
+
+      while($homepagePosts->have_posts( )) {
+        $homepagePosts->the_post(  ); ?>
     <div class="row justify-content-md-center blog-preview__row">
       <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
       <div class="col-md-7">
+        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
           harum quae fugiat,
           earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
         <div class="blog-preview__btn-container">
-          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
+          <a href="<?php the_permalink(); ?>" class="btn btn-primary blog-preview__btn">Read more...</a>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-md-center blog-preview__row">
-      <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
-      <div class="col-md-7">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
-          harum quae fugiat,
-          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
-        <div class="blog-preview__btn-container">
-          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-md-center blog-preview__row">
-      <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
-      <div class="col-md-7">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
-          harum quae fugiat,
-          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
-        <div class="blog-preview__btn-container">
-          <a href="#" class="btn btn-primary blog-preview__btn">Read more...</a>
-        </div>
-      </div>
-    </div>
-
+    <?php }
+    ?>
   </div>
 
 </section>
