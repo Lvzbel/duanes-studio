@@ -90,9 +90,7 @@
       <img src="<?php echo get_theme_file_uri('/src/images/auto.jpg'); ?>" alt="" class="img-thumbnail col-md-3">
       <div class="col-md-7">
         <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum id exercitationem ullam
-          harum quae fugiat,
-          earum ut ducimus rem vero, at quas vitae accusantium! Repellat neque repellendus maiores reprehenderit.</p>
+        <p><?php the_excerpt(); ?></p>
         <div class="blog-preview__btn-container">
           <a href="<?php the_permalink(); ?>" class="btn btn-primary blog-preview__btn">Read more...</a>
         </div>
