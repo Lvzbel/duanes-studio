@@ -87,12 +87,14 @@
       while($homepagePosts->have_posts( )) {
         $homepagePosts->the_post(  ); ?>
     <div class="row justify-content-md-center blog-preview__row">
-      <img src="<?php 
+      <div class="img-thumbnail col-md-3">
+        <img alt="" class="blog-preview__img" src="<?php 
         if( has_post_thumbnail() ):
             echo get_the_post_thumbnail($id);
         endif; 
-        ?>" alt="" class="img-thumbnail col-md-3">
-      <div class="col-md-7">
+        ?>
+      </div>
+      <div class=" col-md-7">
         <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
         <p><?php the_excerpt(); ?></p>
         <div class="blog-preview__btn-container">
