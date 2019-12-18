@@ -14,7 +14,7 @@
     <h2 class="display-4 services__header">Services We Specialize</h2>
     <div class="row services__container">
 
-      <div class="col-md-4 services__service">
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
         <div class="card">
           <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 services__service">
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
         <div class="card">
           <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 services__service">
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
         <div class="card">
           <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
@@ -86,7 +86,7 @@
 
       while($homepagePosts->have_posts( )) {
         $homepagePosts->the_post(  ); ?>
-    <div class="row justify-content-md-center blog-preview__row">
+    <div data-aos-duration="1000" data-aos="fade-left" class="row justify-content-md-center blog-preview__row">
       <div class="img-thumbnail col-md-3">
         <img alt="" class="blog-preview__img" src="<?php 
         if( has_post_thumbnail() ):
