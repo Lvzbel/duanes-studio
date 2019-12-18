@@ -22,7 +22,14 @@
   </div>
 
   <div class="blog__generic-content">
-    <?php the_content(); ?>
+    <div class="container">
+      <?php
+      if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+      the_post_thumbnail( 'large', [ 'class' => 'img-fluid mx-auto d-block shadow-lg rounded-lg'] );
+      }
+      ?>
+      <?php the_content(); ?>
+    </div>
   </div>
 </div>
 <?php  }
