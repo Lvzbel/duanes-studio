@@ -25,8 +25,26 @@ function load_scripts()
 
 add_action('wp_enqueue_scripts', 'load_scripts');
 
+// Custom event posts
+function services_post_types() {
+  register_post_type('service', array(
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'Services',
+      'add_new_item' => 'Edit Service',
+      'edit_item' => 'Edit Service',
+      'all_items' => 'All Services',
+      'singular_name' => 'Service'
+    ),
+    'menu_icon' => 'dashicons-portfolio'
+  ));
+}
+
+add_action('init', 'services_post_types');
+
 // Adding feature image
 function mytheme_post_thumbnails() {
-  add_theme_support( 'post-thumbnails' );
+  add_theme_support( 'post-thumbnails', array('post', 'service') );
 }
 add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );
