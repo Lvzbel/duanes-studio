@@ -42,21 +42,21 @@
 </section>
 <section class="about">
   <div class="container text-white">
-    <h2 class="about__header display-4">About me</h2>
+    <h2 class="about__header display-4"><?php the_field('about_title'); ?></h2>
     <div class="row">
       <div class="col-md-6">
         <div class="about__images-container">
-          <img src="<?php echo get_theme_file_uri('/src/images/about.jpg'); ?>" alt="" class="img-fluid about__img">
+          <img src="<?= get_field('about_image')['url']; ?>" alt="" class="img-fluid about__img">
         </div>
       </div>
       <div class="col-md-6">
         <div class="about__description">
-          <?php get_template_part('includes/section', 'content'); ?>
+          <?php the_field('about_description'); ?>
         </div>
       </div>
     </div>
     <div class="about__btn-container">
-      <a class="about__btn btn btn-secondary btn-lg">Read More...</a>
+      <a href="<?php echo site_url('/about'); ?>" class="about__btn btn btn-secondary btn-lg">Read More...</a>
     </div>
   </div>
 </section>
