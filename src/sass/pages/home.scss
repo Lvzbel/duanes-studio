@@ -51,6 +51,13 @@
 
   &__service {
     margin-top: 2rem;
+    padding: 0;
+  }
+
+  &__card {
+    display: block;
+    height: 450px;
+    margin-right: 10px;
   }
 
   &__img {
