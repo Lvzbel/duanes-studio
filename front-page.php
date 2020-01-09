@@ -19,7 +19,7 @@
 
 <section class="services">
   <div class="container">
-    <h2 class="display-4 services__header">Services We Specialize</h2>
+    <h2 class="display-4 services__header"><?php the_field('services_title'); ?></h2>
     <div class="row services__container">
 
       <?php if(have_rows('services')) : ?>
