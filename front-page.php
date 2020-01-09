@@ -24,7 +24,8 @@
 
       <?php if(have_rows('services')) : ?>
       <?php while(have_rows('services')) : the_row(); ?>
-      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-3 services__service">
+      <a href="<?php echo site_url('/gallery'); ?>" data-aos="zoom-in-up" data-aos-duration="1000"
+        class="col-md-3 services__service">
         <div class="card services__card">
           <img src="<?= get_sub_field('image')['url'] ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
@@ -32,7 +33,7 @@
             <p class="card-text"><?= get_sub_field('description') ?></p>
           </div>
         </div>
-      </div>
+      </a>
       <?php endwhile; ?>
       <?php endif; ?>
 
