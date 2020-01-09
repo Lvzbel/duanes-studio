@@ -26,12 +26,10 @@
       <?php while(have_rows('services')) : the_row(); ?>
       <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-3 services__service">
         <div class="card">
-          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
+          <img src="<?= get_sub_field('image')['url'] ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
-            <h2 class="card-title text-secondary">Sports</h2>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
+            <h2 class="card-title text-secondary"><?= get_sub_field('title') ?></h2>
+            <p class="card-text"><?= get_sub_field('description') ?></p>
           </div>
         </div>
       </div>
