@@ -12,7 +12,7 @@
     <h3 class="display-5 header__by"><?php the_field('main_header_top'); ?></h3>
     <h1 class="display-2 header__main"><?php the_field('main_header'); ?></h1>
     <p class="lead header__lead"><?php the_field('main_header_bottom'); ?></p>
-    <a href="<?php echo site_url('/gallery'); ?>" class="btn btn-lg btn-primary px-5 header__btn">Portfolio</a>
+    <a href="<?php echo site_url('/gallery'); ?>" class="btn btn-lg btn-primary px-5 header__btn">Gallery</a>
   </div>
 
 </header>
