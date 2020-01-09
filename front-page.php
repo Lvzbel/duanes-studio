@@ -22,7 +22,9 @@
     <h2 class="display-4 services__header">Services We Specialize</h2>
     <div class="row services__container">
 
-      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
+      <?php if(have_rows('services')) : ?>
+      <?php while(have_rows('services')) : the_row(); ?>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-3 services__service">
         <div class="card">
           <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
@@ -33,30 +35,8 @@
           </div>
         </div>
       </div>
-
-      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
-        <div class="card">
-          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
-          <div class="card-body">
-            <h2 class="card-title text-secondary">Automotive</h2>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
-          </div>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in-up" data-aos-duration="1000" class="col-md-4 services__service">
-        <div class="card">
-          <img src="<?php echo get_theme_file_uri('/src/images/sports.jpg'); ?>" class="card-img-top" alt="Swimmer">
-          <div class="card-body">
-            <h2 class="card-title text-secondary">Video Production</h2>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-lg btn-outline-secondary">Find out more</a>
-          </div>
-        </div>
-      </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
 
     </div>
   </div>
