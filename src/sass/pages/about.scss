@@ -1,8 +1,12 @@
 .About {
-  padding: 5rem 1rem;
+  background-size: cover;
+  background-position: center;
+  &__container {
+    padding: 5rem 1rem;
 
-  & p img {
-    display: block;
-    margin: auto;
+    & p img {
+      display: block;
+      margin: auto;
+    }
   }
 }
