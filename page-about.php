@@ -8,7 +8,21 @@
 </div>
 
 <div class="About__container container">
-  <?php get_template_part('includes/section', 'content'); ?>
+  <?php if(have_rows('about_sections')) : ?>
+  <?php while(have_rows('about_sections')) : the_row(); ?>
+  <div class="About__section">
+    <h2 class="About__title"><?= get_sub_field('title'); ?></h2>
+    <div class="About__content row">
+      <div class="About__box-img col-md-6">
+        <img src="<?= get_sub_field('image')['url']; ?>" alt="" class="About__image shadow">
+      </div>
+      <div class="About__text col-md-6">
+        <?= get_sub_field('description'); ?>
+      </div>
+    </div>
+  </div>
+  <?php endwhile; ?>
+  <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
