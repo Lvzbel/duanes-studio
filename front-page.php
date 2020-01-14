@@ -74,15 +74,15 @@
       while($homepagePosts->have_posts( )) {
         $homepagePosts->the_post(  ); ?>
     <div data-aos-duration="1000" data-aos="fade-left" class="row justify-content-md-center blog-preview__row">
-      <div class="img-thumbnail col-md-3">
-        <img alt="" class="blog-preview__img" src="<?php 
+      <div class="col-md-3">
+        <img alt="" class="rounded shadow blog-preview__img" src="<?php 
         if( has_post_thumbnail() ):
             echo get_the_post_thumbnail($id);
         endif; 
         ?>
       </div>
       <div class=" col-md-7">
-        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+        <h3><a class="text-secondary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p><?php the_excerpt(); ?></p>
         <div class="blog-preview__btn-container">
           <a href="<?php the_permalink(); ?>" class="btn btn-primary blog-preview__btn">Read more...</a>
