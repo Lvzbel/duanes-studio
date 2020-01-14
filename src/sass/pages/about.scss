@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   &__container {
-    padding: 0;
+    padding: 3rem 0 3rem 0;
     overflow: hidden;
     & p img {
       display: block;
@@ -14,6 +14,7 @@
     background-color: $color-primary;
     color: white;
     padding: 3rem 0;
+    border-radius: 3px;
 
     &:nth-child(2n) {
       background-color: white;
