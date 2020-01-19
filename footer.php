@@ -25,12 +25,12 @@
           <div class="footer__content">
             <p>Check out my Social Media!</p>
             <ul class="Social">
-              <li><a target="_blank" href="<?php the_field('facebook'); ?>" class="Social__link"><i
+              <li><a rel="noreferrer" target="_blank" href="<?php the_field('facebook'); ?>" class="Social__link"><i
                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a target="_blank" href="<?php the_field('instagram'); ?>" class="Social__link"><i
+              <li><a rel="noreferrer" target="_blank" href="<?php the_field('instagram'); ?>" class="Social__link"><i
                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a target="_blank" href="<?php the_field('twitter'); ?>" class="Social__link"><i class="fa fa-twitter"
-                    aria-hidden="true"></i></a></li>
+              <li><a rel="noreferrer" target="_blank" href="<?php the_field('twitter'); ?>" class="Social__link"><i
+                    class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
