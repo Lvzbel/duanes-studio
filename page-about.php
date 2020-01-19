@@ -13,10 +13,10 @@
   <div class="About__section">
     <h2 class="About__title"><?= get_sub_field('title'); ?></h2>
     <div class="About__content row">
-      <div class="About__box-img col-md-6">
+      <div class="About__box-img col-lg-6">
         <img src="<?= get_sub_field('image')['url']; ?>" alt="" class="About__image shadow">
       </div>
-      <div class="About__text col-md-6">
+      <div class="About__text col-lg-6">
         <?= get_sub_field('description'); ?>
       </div>
     </div>
