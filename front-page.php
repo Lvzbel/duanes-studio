@@ -82,7 +82,7 @@
         ?>
       </div>
       <div class=" col-lg-7 col-md-6">
-        <h3><a class="text-secondary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <h3 class="mt-4"><a class="text-secondary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p><?php the_excerpt(); ?></p>
         <div class="blog-preview__btn-container">
           <a href="<?php the_permalink(); ?>" class="btn btn-primary blog-preview__btn">Read more...</a>
