@@ -26,7 +26,7 @@
       <?php while(have_rows('services')) : the_row(); ?>
       <a href="<?php echo site_url('/gallery'); ?>" data-aos="zoom-in-up" data-aos-duration="1000"
         class="col-md-3 services__service">
-        <div class="card services__card">
+        <div class="card services__card shadow-sm">
           <img src="<?= get_sub_field('image')['url'] ?>" class="card-img-top" alt="Swimmer">
           <div class="card-body">
             <h3 class="card-title text-secondary"><?= get_sub_field('title') ?></h3>
