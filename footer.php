@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-4 mt-md-0">
         <div class="footer__body">
           <div class="footer__content">
             <p>Check out my Social Media!</p>
