@@ -12,14 +12,13 @@
             
         while ( $loop->have_posts() ) : $loop->the_post(); 
         $image = (get_field('blog_image')['url']);
-        echo "Testing";
       endwhile;
 ?>
 
 <div class="Banner jumbotron" style="background-image: url(<?= $image; ?>);">
   <div class="container">
     <h1 class="Banner__header display-4 font-weight-normal text-light">Blog</h1>
-    <p class="lead text-light">Stay up to the day about my past projects and other announcements...</p>
+    <p class="lead text-light">Stay up to the day about my past projects and other announcements</p>
   </div>
 </div>
 

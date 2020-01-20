@@ -9,7 +9,7 @@
     if (is_author()) {
       echo "Posts by "; the_author();
     } ?></h1>
-    <p class="lead text-light">Stay up to the day about my past projects and other announcements</p>
+    <p class="lead text-light">Stay up to the day about my past projects and other announcements....Pedo</p>
   </div>
 </div>
 
