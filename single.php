@@ -1,10 +1,24 @@
 <?php get_header(); ?>
 
 <?php 
+          $args = array(  
+            'post_type' => 'blog_banner',
+            'posts_per_page' => 1
+        );
+
+        $image = "";
+    
+        $loop = new WP_Query( $args ); 
+            
+        while ( $loop->have_posts() ) : $loop->the_post(); 
+        $image = (get_field('blog_image')['url']);
+      endwhile;
+?>
+
+<?php 
   while(have_posts(  )) {
     the_post(); ?>
-<div class="Banner jumbotron"
-  style="background-image: url(<?php echo get_theme_file_uri('/src/images/banner-blog.jpg'); ?>);">
+<div class="Banner jumbotron" style="background-image: url(<?= $image; ?>);">
   <div class="container">
     <h1 class="Banner__header display-4 font-weight-normal text-light"><?php the_title(); ?></h1>
     <p class="lead text-light">Stay up to the day about my past projects and other announcements</p>
